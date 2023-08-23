@@ -48,9 +48,10 @@ nav,.hero,#about,.footer1 ,.footer2{
 
 .hero{ 
     height: 100vh ;
+    text-align: center;
 }
 .hero ,#portfolio,#about ,#contact, .foot ,.footer2{
-    background-color: rgb(172, 233, 172);
+    background-color: rgb(107, 199, 107);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,6 +74,7 @@ nav,.hero,#about,.footer1 ,.footer2{
     width: 220px;
     position: absolute;
     top: -44px;
+    left: -1px;
     border-radius: 40%;
 }
 .hero .icon1,#about .icon1{
@@ -99,32 +101,8 @@ nav,.hero,#about,.footer1 ,.footer2{
     align-items: center;
     gap: 7px;
 }
-/**.icon1::after{
-    content: " ";
-    height: 2px;
-    width: 25px;
-    background-color: white;
-}
-.icon1::before{
-    content: " ";
-    height: 2px;
-    width: 25px;
-    background-color: white;
-}
-.icon2::after{
-    content: " ";
-    height: 2px;
-    width: 25px;
-    background-color: black;
-}.icon2::before{
-    content: " ";
-    height: 2px;
-    width: 25px;
-    background-color:black;
-}**/
-.porticon{
-    width: 200px;
-}
+
+
 #portfolio ,#contact{
     background-color: white; 
 }
@@ -140,9 +118,27 @@ nav,.hero,#about,.footer1 ,.footer2{
     width: 356px;
     height: 256px;
      border-radius: 10px;
-     background-color: aqua;
+     
      margin: 10px 10px;
      position: relative;
+}
+.card1{
+    background-color: rgb(253, 178, 38);
+}
+.card2{
+    background-color: rgb(56, 56, 252);
+}
+.card3{
+    background-color: rgb(119, 8, 119);
+}
+.card4{
+    background-color: rgb(241, 241, 108);
+}
+.card5{
+    background-color: rgb(101, 101, 241);
+}
+.card6{
+    background-color: rgb(175, 49, 49);
 }
 .circ{
     width: 200px;
@@ -160,7 +156,16 @@ justify-content: center;
 align-items: center;
 text-align: center;
 flex-wrap: wrap;
+gap: 5px;
 
+}
+.download{
+    width: 150px;
+    height: 30px;
+    border: 1px solid white;
+    background-color:rgb(107, 199, 107) ;
+    color: white;
+    border-radius: 5px;
 }
 .p1{
     margin: 10px auto;
@@ -169,20 +174,28 @@ width: 250px;
 
 .submit {
     width: 150px;
-    height: max-content;
-    background-color:rgb(172, 233, 172);
+    height: 50px;
+    background-color:rgb(107, 199, 107);
     color: white;
-    font-size: 10px;
+    font-size: 20px;
     margin-top: 20px;
     border-radius: 5px;
-    justify-content: flex-start;
+    
 }
+
 
 .submit:hover {
     background-color: gray;
 }
 label ,input{
     display: block;
+    color: gray;
+    
+}
+input , textarea{
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 300px;
 }
 .footer1{
     display: flex;
@@ -204,6 +217,13 @@ label ,input{
     text-decoration:underline;
 
 }
+.around{
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
 .flex-wrap{
     flex-wrap: wrap;
 }
@@ -215,6 +235,10 @@ label ,input{
     #portfolio .card .circ{
         width: 150px;
         height: 150px;
+    }
+    input , textarea{
+       
+        width: 200px;
     }
 }
     
